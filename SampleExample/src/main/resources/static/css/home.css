@@ -1,0 +1,82 @@
+body {
+    background-image: url("images/bck.jpeg"); /* Replace with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .form-container {
+    width: 300px;
+    padding: 30px;
+    padding-top: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .moreLinks{
+    color: blue;
+    text-decoration: none;
+  }
+
+  .moreLinks:visited{
+    color: blue;
+    text-decoration: none;
+  }
+
+  #errorMessage{
+    color: red;
+    display: block;
+    font-weight: bold;
+  }
+
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon input {
+    padding-right: 10px; /* Add some space for the icon */
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 40%;
+    right: 5px;
+    transform: translateY(-50%);
+  } 
+
+  #passwordInput :disabled{
+    background-color: rgb(205, 192, 175);
+  }
+
+  #loginButton:disabled{
+    background-color: red;
+  }
