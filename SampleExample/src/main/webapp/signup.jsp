@@ -99,29 +99,31 @@
     </script>
 
     <body>
-        <div class="form-container">
-            <h2>Signup</h2>
-            <form id="myForm" action="signup" method="post">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
-                <br>
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" onkeyup="checkEmail()" required>
-                <p id="emailStatus"></p>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" onkeyup="validatePasswordPattern()" required>
-                <p id="passwordPattern">Password must contain atleast ONE UPPERCASE, ONE LOWERCASE, ONE DIGIT, ONE SPECIALCHARACTER, and length of 8</p>
-                <br>
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" onkeyup="validatePassword()" required>
-                <p id="passwordMatch" style="display: none; color: red;"></p>
-                <br>
-                <button id="submit" type="submit" value="Sign Up">Sign up</button>
-            </form>
-        </div>
+                  <div class="form-container">
+               <h2>Signup</h2>
+               <form id="myForm" action="signup" method="post">
+                   <label for="firstName">First Name:</label>
+                   <input type="text" id="firstName" name="firstName" required>
+                   <br>
+                   <label for="lastName">Last Name:</label>
+                   <input type="text" id="lastName" name="lastName" required>
+                   <br>
+                   <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" onkeyup="checkEmail()" required>
+                   <p id="emailStatus"></p>
+                   <label for="password">Password:</label>
+                   <input type="password" id="password" name="password" onkeyup="validatePasswordPattern()" required>
+                   <p id="passwordPattern">Password must contain atleast ONE UPPERCASE, ONE LOWERCASE, ONE DIGIT, ONE SPECIALCHARACTER, and length of 8</p>
+                   <br>
+                   <label for="confirmPassword">Confirm Password:</label>
+                   <input type="password" id="confirmPassword" name="confirmPassword" onkeyup="validatePassword()" required>
+                   <p id="passwordMatch" style="display: none; color: red;"></p>
+                   <br>
+                   <button id="submit" type="submit" value="Sign Up">Sign up</button>
+               </form>
+               <p><a href="home.jsp">Back to login?</p>
+           </div>
+
     </body>
 
     </html>

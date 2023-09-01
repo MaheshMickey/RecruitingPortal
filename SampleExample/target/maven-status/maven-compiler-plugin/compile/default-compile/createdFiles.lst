@@ -1,3 +1,8 @@
+com\practice\sampleexample\Controller\UserController.class
+com\practice\sampleexample\Model\User.class
+com\practice\sampleexample\SampleExampleApplication.class
+com\practice\sampleexample\Service\UserService.class
 com\practice\sampleexample\Repository\EmailService.class
+com\practice\sampleexample\Repository\UserRepository.class
 com\practice\sampleexample\Repository\VerificationCodeRepo.class
 com\practice\sampleexample\Model\VerificationCode.class

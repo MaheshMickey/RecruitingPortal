@@ -8,28 +8,28 @@
     </head>
 
     <body>
-        <div class="form-container">
-            <h1>Forgot Password</h1>
-            <form id="forgotPasswordForm" method="post">
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                <div id="submit-container">
-                    <button id="submit" type="submit">Send Code</button>
-                </div>
-            </form>
-
-            <form id="codeForm" style="display: none;">
-                <div class="input-container">
-                    <input type="text" id="codeInput" name="code" placeholder="Enter the code" required>
-                    <div class="info-icon"></div>
-                    <div class="info-tooltip">
-                        Please check the code sent to above email.
+     <div class="form-container">
+                <h1>Forgot Password</h1>
+                <form id="forgotPasswordForm" method="post">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <div id="submit-container">
+                        <button id="submit" type="submit">Send Code</button>
                     </div>
-                </div>
-                <div id="codeSubmitContainer" style="text-align: center; margin-top: 10px;">
-                    <button id="codeSubmit" type="submit">Validate Code</button>
-                </div>
-            </form>
-        </div>
+                </form>
+
+                <form id="codeForm" style="display: none;">
+                    <div class="input-container">
+                        <input type="text" id="codeInput" name="code" placeholder="Enter the code" required>
+                        <div class="info-icon"></div>
+                        <div class="info-tooltip">
+                            Please check the code sent to above email.
+                        </div>
+                    </div>
+                    <div id="codeSubmitContainer" style="text-align: center; margin-top: 10px;">
+                        <button id="codeSubmit" type="submit">Validate Code</button>
+                    </div>
+                </form>
+    		</div>
     </body>
     <script>
         document.addEventListener("DOMContentLoaded", function () {

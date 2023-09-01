@@ -78,17 +78,18 @@ public class UserController {
 	// 	return mv;
 	// }
 
-	@PostMapping("/oauth2/code")
-	public ModelAndView sendEmail(@RequestParam("email") String Email) throws MessagingException, UnsupportedEncodingException{
-		ModelAndView mv =  new ModelAndView();
-		System.out.println("From Controller");
-		userService.sendVerificationCode(Email);
-		// MimeMessage message = emailService.createMimeMessage();
+	// MimeMessage message = emailService.createMimeMessage();
 		// MimeMessageHelper helper = new MimeMessageHelper(message);
 		// helper.setSubject("Verification code to Reset Password");
 		// helper.setText("Your verification code is :");
 		// helper.setTo(Email);
 		// emailService.send(message);
+
+	@PostMapping("/oauth2/code")
+	public ModelAndView sendEmail(@RequestParam("email") String Email) throws MessagingException, UnsupportedEncodingException{
+		ModelAndView mv =  new ModelAndView();
+		System.out.println("From Controller");
+		userService.sendVerificationCode(Email);
 		mv.setViewName("forgotpassword.jsp");
 		return mv;
 	}
