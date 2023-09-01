@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="/css/home.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <title>Login Page</title>
+     
     </head>
     <script>
         function validateLoginEmail(){
