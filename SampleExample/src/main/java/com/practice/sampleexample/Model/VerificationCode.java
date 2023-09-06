@@ -22,7 +22,6 @@ public class VerificationCode {
     private int code;
 
     public VerificationCode(){
-        
     }
 
     public VerificationCode(Long id, String email, int code) {

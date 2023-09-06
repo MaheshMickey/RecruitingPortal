@@ -88,8 +88,11 @@ public class UserService implements EmailService{
 		VerificationCode verificationCode = verificationCodeRepo.findByEmail(email);
 		int codeF = Integer.parseInt(code);
 		if(verificationCode!=null && verificationCode.getCode() == codeF){
+			System.out.println("Success of verfication from service");
 			return true;
 		}
-		return false;
+		else{
+			return false;
+		}
 	}
 }

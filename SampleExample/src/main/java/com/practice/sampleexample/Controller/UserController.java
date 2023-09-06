@@ -32,7 +32,6 @@ public class UserController {
 		ModelAndView mv = new ModelAndView();
 		System.out.println("get");
 		mv.setViewName("home.jsp");
-		mv.addObject("user");
 		return mv;
 	}
 
@@ -85,25 +84,23 @@ public class UserController {
 		// helper.setTo(Email);
 		// emailService.send(message);
 
-	@PostMapping("/oauth2/code")
+	@PostMapping("/code")
 	public ModelAndView sendEmail(@RequestParam("email") String Email) throws MessagingException, UnsupportedEncodingException{
 		ModelAndView mv =  new ModelAndView();
 		System.out.println("From Controller");
 		userService.sendVerificationCode(Email);
-		mv.setViewName("forgotpassword.jsp");
+		mv.setViewName("setpassword.jsp");
 		return mv;
 	}
 
-	@PostMapping("/validate-code")
-	public ModelAndView validateCodeFromDB(@RequestParam("email") String email, @RequestParam("code") String code){
+	@PostMapping("/validatecode")
+	public ModelAndView validateCodeFromDB(@RequestParam("email")String email, @RequestParam("code") String code){
 		 System.out.println("Validate Code from Controller");
-		boolean result = userService.validateCodeFromDB(email, code);
 		ModelAndView mv = new ModelAndView();
-		if(result){
-			mv.setViewName("resetpassword.jsp");
-			return mv;
+		if(userService.validateCodeFromDB(email, code)){
+			System.out.println("Code validation inside controller");
+		mv.setViewName("setpassword.jsp");
 		}
-		mv.setViewName("forgotpassword.jsp");
 		return mv;
 	}
 }
